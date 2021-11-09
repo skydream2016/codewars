@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(
+        70deg,
+        rgb(78, 169, 221),
+        rgba(226, 163, 173, 0.979)
+    );
+    display: flexbox;
+    height: 0vmax;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+#replica {
+    display: block;
+    text-align: center;
+    font-size: 2vmax;
+    font-family: 'Mohave', sans-serif;
+    color: rgba(0, 0, 0, 0.575);
+}
