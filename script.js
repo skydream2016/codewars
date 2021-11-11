@@ -33,3 +33,13 @@
 // function boolToWord(bool) {
 //     return (bool === true) ? 'Yes' : 'No';
 //  }
+
+// const str = 'komandik';
+
+// function reverse(str) {
+//     const Arr = str.split('');
+//     const reversedArr = Arr.reverse();
+//     const reversedStr = reversedArr.join('');
+//     return reversedStr;
+// }
+// const x = reverse(str);
