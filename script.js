@@ -43,3 +43,7 @@
 //     return reversedStr;
 // }
 // const x = reverse(str);
+
+// function repeatStr (n, s) {
+//     return s.repeat(n);
+//   }
