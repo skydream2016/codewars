@@ -47,3 +47,14 @@
 // function repeatStr (n, s) {
 //     return s.repeat(n);
 //   }
+const x = 'Andrii';
+function removeChar(str) {
+    let arr = str.split('');
+    arr.splice(-1, 1);
+    arr.splice(0, 1);
+    return arr.join('');
+}
+console.log(removeChar(x));
+
+const removeChar2 = str => str.slice(1,-1);
+console.log(removeChar2(x));
