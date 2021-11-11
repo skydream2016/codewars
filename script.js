@@ -1,3 +1,7 @@
+// multiply = function (a, b) {
+//     return a * b;
+//   }
+
 // function even_or_odd(number) {
 //     if (number % 2 == 0) {
 //       return 'Even';
@@ -17,3 +21,15 @@
 //   return sum;
 // }
 // console.log(positiveSum(arr_1));
+
+// function boolToWord( bool ){
+//     return bool == true ? 'Yes' : 'No';
+//   }
+
+// function opposite(number) {
+//     return(-number);
+//   }
+
+// function boolToWord(bool) {
+//     return (bool === true) ? 'Yes' : 'No';
+//  }
