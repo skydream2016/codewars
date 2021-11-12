@@ -59,15 +59,32 @@
 // const removeChar2 = str => str.slice(1,-1);
 // console.log(removeChar2(x));
 
-const arr = [4, 5, 7, 1, 4, 0];
+// const arr = [4, 5, 7, 1, 4, 0];
 
-function findSmallestInt(args) {
-    let smallest = args[0];
-    for (let i = 0; i < args.length; i++) {
-        if (args[i] < smallest) {
-            smallest = args[i];
-        } else continue;
-    }
-    return smallest;
+// function findSmallestInt(args) {
+//     let smallest = args[0];
+//     for (let i = 0; i < args.length; i++) {
+//         if (args[i] < smallest) {
+//             smallest = args[i];
+//         } else continue;
+//     }
+//     return smallest;
+// }
+// console.log(findSmallestInt(arr));
+
+
+
+
+
+
+
+const str = ('1 9 3 4 -5'); // return "9 -5"
+console.log(str);
+
+function sorter(num) {
+    const arr = num.split();
+
+
+    return result;
 }
-console.log(findSmallestInt(arr));
+console.log(sorter(str));
