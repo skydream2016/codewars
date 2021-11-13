@@ -107,14 +107,71 @@
 // }
 // noSpace(x);
 
-const numbers = [1, 2, 3];
+// const numbers = [1, 2, 3];
 
-function squareSum(numbers) {
+// function squareSum(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         // Number(numbers[i]);
+//         sum = sum + Math.pow(numbers[i], 2);
+//     }
+//     return sum;
+// }
+// console.log(squareSum(numbers));
+
+// const arrayOfSheep = [
+//     true,
+//     true,
+//     true,
+//     false,
+//     true,
+//     true,
+//     true,
+//     true,
+//     true,
+//     false,
+//     true,
+//     false,
+//     true,
+//     false,
+//     false,
+//     true,
+//     true,
+//     true,
+//     true,
+//     true,
+//     false,
+//     false,
+//     true,
+//     true,
+// ];
+
+// function countSheeps(arrayOfSheep) {
+//     arrayOfSheep.forEach(function(item) {
+//     if (item == true) {
+//         let sheeps += 1;
+//       }
+
+const arr = [true, true, false, true];
+
+const x = function (arr) {
     let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        // Number(numbers[i]);
-        sum = sum + Math.pow(numbers[i], 2);
-    }
-    return sum;
-}
-console.log(squareSum(numbers));
+    for (let i = 0; i < arr.length; i++)
+        if (arr[i] == true) {
+            sum += 1;
+        }
+    console.log(sum);
+};
+x(arr);
+
+const arrayOfSheep = [true, false, true];
+
+const c = function (arrayOfSheep) {
+    let sum = 0;
+    for (let i = 0; i < arrayOfSheep.length; i++)
+        if (arrayOfSheep[i] == true) {
+            sum += 1;
+        }
+    console.log(sum);
+};
+c(arrayOfSheep);
