@@ -72,14 +72,11 @@
 // }
 // console.log(findSmallestInt(arr));
 
-
-
-
 // const numbers = '8 3 -5 42 -1 0 0 -9 4 7 4 -4'; // return "42 -9"
 
 // let smallNum = Infinity;
 // let bigNum = -Infinity;
-// const split = splitter(numbers);  
+// const split = splitter(numbers);
 
 // function splitter (str) {
 //     return str.split(' ');
@@ -87,24 +84,37 @@
 
 // for (let i = 0; i < split.length; i ++) {
 //     split[i] = Number(split[i]);
-//     if (split[i] > bigNum) {bigNum = split[i]}   
+//     if (split[i] > bigNum) {bigNum = split[i]}
 //     if (split[i] < smallNum) {smallNum = split[i]}
 // }
 // const result = `${bigNum} ${smallNum}`;
 // console.log(result);
 
+// const x = '8 j 8   mBliB8g  imjB8B8  jl  B';
+// console.log(x);
 
-const x = '8 j 8   mBliB8g  imjB8B8  jl  B';
-console.log(x);
+// function noSpace(x) {
+//     const arr = x.split(' ');
+//     const newArr = [];
+//     for (let i = 0; i < arr.length; i++)
+//         if (arr[i] !== '') {
+//             newArr.push(arr[i]);
+//         }
+//     console.log(newArr);
+//     const str = newArr.join('');
+//     console.log(str);
+//     return str;
+// }
+// noSpace(x);
 
-function noSpace(x){
-    const arr = x.split(' ');
-    const newArr = [];
-    for (let i = 0; i < arr.length; i++)
-    if (arr[i] !== '') {newArr.push(arr[i])}
-    console.log(newArr);
-    const str = newArr.join('');
-    console.log(str);
-    return str; 
-   }
-noSpace(x) 
+const numbers = [1, 2, 3];
+
+function squareSum(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        // Number(numbers[i]);
+        sum = sum + Math.pow(numbers[i], 2);
+    }
+    return sum;
+}
+console.log(squareSum(numbers));
