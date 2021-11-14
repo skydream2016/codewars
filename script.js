@@ -152,26 +152,48 @@
 //         let sheeps += 1;
 //       }
 
-const arr = [true, true, false, true];
+// const arr = [true, true, false, true];
 
-const x = function (arr) {
-    let sum = 0;
+// const x = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++)
+//         if (arr[i] == true) {
+//             sum += 1;
+//         }
+//     console.log(sum);
+// };
+// x(arr);
+
+// const arrayOfSheep = [true, false, true];
+
+// const c = function (arrayOfSheep) {
+//     let sum = 0;
+//     for (let i = 0; i < arrayOfSheep.length; i++)
+//         if (arrayOfSheep[i] == true) {
+//             sum += 1;
+//         }
+//     console.log(sum);
+// };
+// c(arrayOfSheep);
+
+//  a == false      true,  a != false
+// !a == false      true, !a != false
+//  a == !a         true,  a != !a
+
+const number = 1.243567; // precision = 4   result = 1.2435
+
+Math.roundTo = function (number, precision) {
+    // if (precision === 0) return Math.floor(number);
+    const str = String(number);
+    let arr = str.split('');
+    // if (arr.indexOf('.') == -1) return number;
+    let point = arr.indexOf('.');
+    let roundedArray = [];
     for (let i = 0; i < arr.length; i++)
-        if (arr[i] == true) {
-            sum += 1;
+        if (arr.indexOf(arr[i]) <= point + precision) {
+            roundedArray.push(arr[i]);
         }
-    console.log(sum);
+    const x = Number(roundedArray.join(''));
+    return x;
 };
-x(arr);
-
-const arrayOfSheep = [true, false, true];
-
-const c = function (arrayOfSheep) {
-    let sum = 0;
-    for (let i = 0; i < arrayOfSheep.length; i++)
-        if (arrayOfSheep[i] == true) {
-            sum += 1;
-        }
-    console.log(sum);
-};
-c(arrayOfSheep);
+console.log(Math.roundTo(number, 4));
