@@ -180,20 +180,21 @@
 // !a == false      true, !a != false
 //  a == !a         true,  a != !a
 
-const number = 1.243567; // precision = 4   result = 1.2435
+// const number = 1.243567; // precision = 4   result = 1.2435
 
-Math.roundTo = function (number, precision) {
-    // if (precision === 0) return Math.floor(number);
-    const str = String(number);
-    let arr = str.split('');
-    // if (arr.indexOf('.') == -1) return number;
-    let point = arr.indexOf('.');
-    let roundedArray = [];
-    for (let i = 0; i < arr.length; i++)
-        if (arr.indexOf(arr[i]) <= point + precision) {
-            roundedArray.push(arr[i]);
-        }
-    const x = Number(roundedArray.join(''));
-    return x;
-};
-console.log(Math.roundTo(number, 4));
+// Math.roundTo = function (number, precision) {
+//     // if (precision === 0) return Math.floor(number);
+//     const str = String(number);
+//     let arr = str.split('');
+//     // if (arr.indexOf('.') == -1) return number;
+//     let point = arr.indexOf('.');
+//     let roundedArray = [];
+//     for (let i = 0; i < arr.length; i++)
+//         if (arr.indexOf(arr[i]) <= point + precision) {
+//             roundedArray.push(arr[i]);
+//         }
+//     const x = Number(roundedArray.join(''));
+//     return x;
+// };
+// console.log(Math.roundTo(number, 4));
+
