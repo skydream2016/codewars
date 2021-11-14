@@ -203,6 +203,28 @@
 //     let sum = 0;
 //     marks.forEach(function (item) {
 //       sum += item;
-//     }); 
+//     });
 //     return Math.trunc(sum / marks.length);
 //   }
+
+// const arr = ['+', 3, 2];
+// const arr1 = ['-', 4, 3];
+// const arr3 = ['*', 2, 8];
+// const arr4 = ['/', 14, 7];
+
+// function basicOp(operation, value1, value2) {
+//     if (operation == '+') {
+//         return value1 + value2;
+//     }
+//     if (operation == '-') {
+//         return value1 - value2;
+//     }
+//     if (operation == '*') {
+//         return value1 * value2;
+//     }
+//     if (operation == '/') {
+//         return value1 / value2;
+//     }
+// }
+
+// console.log(basicOp(arr[0], arr[1], arr[2]));
