@@ -228,3 +228,20 @@
 // }
 
 // console.log(basicOp(arr[0], arr[1], arr[2]));
+
+// const n = 35231;
+
+// function digitize(n) {
+//     const str = String(n);
+//     const arr = str.split('');
+//     arrRev = arr.reverse(arr);
+//     return arrRev.map(Number);
+// }
+
+// console.log(digitize(n));
+
+// function digitizer(n) {
+//     return String(n).split('').map(Number).reverse();
+// }
+
+// console.log(digitizer(n));
