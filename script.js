@@ -198,3 +198,11 @@
 // };
 // console.log(Math.roundTo(number, 4));
 
+// function getAverage(marks){
+//     //TODO : calculate the downward rounded average of the marks array
+//     let sum = 0;
+//     marks.forEach(function (item) {
+//       sum += item;
+//     }); 
+//     return Math.trunc(sum / marks.length);
+//   }
