@@ -8,17 +8,27 @@ body {
     height: 0vmax;
 }
 
-#logo {
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    margin-top: 15vh;
+    width: 15vw;
 }
 
-#replica {
+.replica {                                                        
     display: block;
     text-align: center;
-    font-size: 2vmax;
+    margin-top: 15vh;
+    font-size: 3vh;
     font-family: 'Mohave', sans-serif;
-    color: rgba(0, 0, 0, 0.575);
+    color: rgba(0, 0, 0, 0.5);
 }
+/* One unit on any of the three values is 1% of the viewport axis. 
+“Viewport” == browser window size == window object. 
+If the viewport is 40cm wide, 1vw == 0.4cm. */
+
+/* 1vw = 1% of viewport width
+1vh = 1% of viewport height
+1vmin = 1vw or 1vh, whichever is smaller
+1vmax = 1vw or 1vh, whichever is larger */
