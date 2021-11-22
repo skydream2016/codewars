@@ -246,14 +246,18 @@
 
 // console.log(digitizer(n));
 
-const arr = [-1,1,2,3,4,5,6,7,8,9];
+// const arr = [-1,1,2,3,4,5,6,7,8,9];
 
-function firstNonConsecutive(arr) {
-    for (let i = 0; i < arr.length - 1; ++i) {
-      if (arr[i] + 1 !== arr[i + 1]) {
-        return arr[i + 1]
-      }
-    }
-    return null
-  }
-console.log(firstNonConsecutive(arr));
+// function firstNonConsecutive(arr) {
+//     for (let i = 0; i < arr.length - 1; ++i) {
+//       if (arr[i] + 1 !== arr[i + 1]) {
+//         return arr[i + 1]
+//       }
+//     }
+//     return null
+//   }
+// console.log(firstNonConsecutive(arr));
+
+function reverseWords(str) {
+    return str.split(' ').reverse().join(' ');
+}
