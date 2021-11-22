@@ -261,3 +261,19 @@
 function reverseWords(str) {
     return str.split(' ').reverse().join(' ');
 }
+
+
+function invert(array) {
+  let res = [];
+  array.forEach((item) => {
+    res.push(-item);
+  })
+  return res;
+}
+
+function arrayPlusArray(arr1, arr2) {
+  let arr = arr1.concat(arr2);
+  let sum = 0;
+  arr.forEach(item => {sum = item + sum});
+  return sum; 
+}
