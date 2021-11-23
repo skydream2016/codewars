@@ -326,10 +326,41 @@ const TIPS = {
     excellent: 0.2,
 };
 
-const calculateTip = (amount, rating) => {
+const calculateTip3 = (amount, rating) => {
     rating = rating.toLowerCase();
 
     return rating in TIPS
         ? Math.ceil(TIPS[rating] * amount)
         : 'Rating not recognised';
 };
+
+function between(a, b) {
+    let arr = [];
+    for (i = a; i <= b; i++) arr.push(i);
+    return arr;
+}
+
+function stringy(size) {
+    if (size % 2) {
+        const quantity = (size - 1) / 2;
+        let str = '';
+        for (i = 0; i < quantity; i++) {
+            str = str + '10';
+        }
+        return str + '1';
+        //
+    } else {
+        let str = '';
+        for (i = 0; i < size / 2; i++) {
+            str = str + '10';
+        }
+        return str;
+    }
+}
+console.log(stringy(5));
+
+function stringy(size) {
+    var str = '';
+    for (var i = 1; i <= size; i++) str += i % 2;
+    return str;
+}
