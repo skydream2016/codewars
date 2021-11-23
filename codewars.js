@@ -262,18 +262,74 @@ function reverseWords(str) {
     return str.split(' ').reverse().join(' ');
 }
 
-
 function invert(array) {
-  let res = [];
-  array.forEach((item) => {
-    res.push(-item);
-  })
-  return res;
+    let res = [];
+    array.forEach((item) => {
+        res.push(-item);
+    });
+    return res;
 }
 
 function arrayPlusArray(arr1, arr2) {
-  let arr = arr1.concat(arr2);
-  let sum = 0;
-  arr.forEach(item => {sum = item + sum});
-  return sum; 
+    let arr = arr1.concat(arr2);
+    let sum = 0;
+    arr.forEach((item) => {
+        sum = item + sum;
+    });
+    return sum;
 }
+
+function betterThanAverage(classPoints, yourPoints) {
+    return Boolean(
+        (classPoints.reduce((a, b) => a + b) + yourPoints) /
+            (classPoints.length + 1) <
+            yourPoints
+    );
+}
+
+function betterThanAverage(classPoints, yourPoints) {
+    return (
+        yourPoints > classPoints.reduce((a, b) => a + b) / classPoints.length
+    );
+}
+
+function squareArea(A) {
+    return Math.round(Math.pow((2 * A) / Math.PI, 2) * 100) / 100;
+}
+
+const areaOrPerimeter = function (l, w) {
+    return l == w ? l * w : 2 * (l + w);
+};
+
+function calculateTip(amount, rating) {
+    switch (rating.toLowerCase()) {
+        case 'terrible':
+            return 0;
+        case 'poor':
+            return Math.ceil(amount * 0.05);
+        case 'good':
+            return Math.ceil(amount * 0.1);
+        case 'great':
+            return Math.ceil(amount * 0.15);
+        case 'excellent':
+            return Math.ceil(amount * 0.2);
+        default:
+            return 'Rating not recognised';
+    }
+}
+
+const TIPS = {
+    terrible: 0.0,
+    poor: 0.05,
+    good: 0.1,
+    great: 0.15,
+    excellent: 0.2,
+};
+
+const calculateTip = (amount, rating) => {
+    rating = rating.toLowerCase();
+
+    return rating in TIPS
+        ? Math.ceil(TIPS[rating] * amount)
+        : 'Rating not recognised';
+};
