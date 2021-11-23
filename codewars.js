@@ -364,3 +364,48 @@ function stringy(size) {
     for (var i = 1; i <= size; i++) str += i % 2;
     return str;
 }
+
+// Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+
+// S is misinterpreted as 5
+// O is misinterpreted as 0
+// I is misinterpreted as 1
+// The test cases contain numbers only by mistake.
+
+function correct(string) {
+    const arr = string.split('');
+    let newArr = [];
+
+    arr.forEach((item) => {
+        switch (item) {
+            case '5':
+                newArr.push('s');
+                break;
+
+            case '0':
+                newArr.push('o');
+                break;
+
+            case '1':
+                newArr.push('i');
+                break;
+
+            default:
+                newArr.push(item);
+                break;
+        }
+    });
+
+    return newArr.join('').toUpperCase();
+}
+correct('LOND0N');
+
+const corrections = {
+    '5': 'S',
+    '0': 'O',
+    '1': 'I',
+  };
+  
+  const correct = string => (
+    string.replace(/[501]/g, character => corrections[character])
+  );
