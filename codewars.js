@@ -357,7 +357,7 @@ function stringy(size) {
         return str;
     }
 }
-console.log(stringy(5));
+stringy(5);
 
 function stringy(size) {
     var str = '';
@@ -406,6 +406,51 @@ const corrections = {
     '1': 'I',
   };
   
-  const correct = string => (
+  const correct2 = string => (
     string.replace(/[501]/g, character => corrections[character])
   );
+
+
+
+
+function formatMoney(amount){
+    const doll = Math.trunc(amount);
+    if (doll < amount && (amount - doll) < 0.11) {         // number was decemal
+        const dec0x = Math.round((amount - doll) * 100);
+        return `\$${doll}.0${dec0x}`;
+    } else if (doll < amount && (amount - doll) > 0.1 ) {
+        const decxx = Math.round((amount - doll) * 100);
+        return `\$${doll}.${decxx}`;
+    } else  {                                       // number is int
+        return `\$${amount}.00`; 
+    }
+}
+console.log(formatMoney(227.02));
+
+
+/********************it dont work*********************/
+//
+// 
+// 
+// Expected: '$477.34', instead got: '$477.33'
+
+// Testing 477.34
+
+// Testing 212.54
+// Testing 21.83
+// Testing 444.53
+// Testing 933.4
+// Testing 75.52
+// Testing 49.9
+// Testing 1089.3
+// Testing 452.9
+// Testing 1287.8
+// Testing 509.7
+// Testing 78.6
+
+
+/********************it works************************/
+// Testing 619.7
+// Testing 700.11
+// Testing 26.44
+// Testing 477.34
