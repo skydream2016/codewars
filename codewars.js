@@ -503,3 +503,22 @@ function solution([m1,m2,d],[um1,um2,ud]) {
     return G * m1 * conversion[um1] * m2 * conversion[um2] / ( d * conversion[ud] ) ** 2;
 }
 
+const x = 3 
+const y = 2 
+let z
+console.log(y, x)
+
+function addNumber(numx, numy) {
+//    return                        //   give us ";" however can continue string 
+//    z = x + y
+}
+console.log(addNumber(x, y))
+++z
+console.log(z)
+z = 5 + 60 
+// z                               //   give us ";" however can continue string 
+// ++
+console.log(z)
+
+// ;(a, b)                         //   give us ";" however can continue string 
+// =>  a + b + 20
