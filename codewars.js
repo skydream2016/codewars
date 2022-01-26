@@ -573,19 +573,46 @@
 //     for (let i = 1; i < array.length; i++)
 //       if ((array[i] === 0) || (array[i] % i === 0)) {
 //         newArr.push(array[i]);
-//       } 
+//       }
 //     return newArr;
 //   }
 
-const input = prompt("Enter a month number: ");
+// const input = prompt("Enter a month number: ");
 
-switch (input) {
-    case '1':
-        console.log('januarry');
-        break
-    case '2': 
-        console.log('februarry');
-        break
-    default: 
-        console.log('some other');
+// switch (input) {
+//     case '1':
+//         console.log('januarry');
+//         break
+//     case '2':
+//         console.log('februarry');
+//         break
+//     default:
+//         console.log('some other');
+// }
+
+const arr2 = [2, 1, 10, 3, 56, 1, 4, 5];
+const arr = [2, 1, 10];
+
+function sumOfDifferences(arr) {
+    if (arr === [] && arr.length === 1) return 0;
+
+    let mysum = 0;
+    let i = 0;
+
+    //// descending order
+    const descArr = arr.sort(function (a, b) {
+        return b - a;
+    });
+    console.log(descArr);
+    // console.log(descArr.length);
+
+    //// calc diference and summ it
+    for (let j = 0; j < descArr.length - 1; j++) {
+        console.log(descArr[j]);
+        mysum += descArr[j] - descArr[j + 1];
+        console.log(mysum);
+    }
+    return mysum;
 }
+
+console.log(sumOfDifferences(arr));
